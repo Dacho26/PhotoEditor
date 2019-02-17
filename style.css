@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: lightcyan;
+}
+
+button {}
+
+.radcontrol {
+    border: 2px solid black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: pink;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 100%;
+    cursor: pointer;
+
+}

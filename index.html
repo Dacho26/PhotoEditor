@@ -6,10 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PhotoEditor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+    <section id="editor">
+        <div id="toolbar">
 
+            <label for="brightness"> Brightness (<span id="BrightValue">0</span>)</label>
+            <input type="range" id="brightness" min="-100" max="100" value="0">
+            <div class="poss">
+                <label for="contrast"> Contrast (<span id="ContrastValue">0</span>)</label>
+                <input type="range" id="contrast" min="-100" max="100" value="0">
+            </div>
+
+            <button id="invert">Invert Color</button>
+
+            <div id="penSize">
+                <span id="radval">Pen size: 10</span>
+                <div class="poss">
+                    <div id="decrad" class="radcontrol">-</div>
+
+                    <div id="incrad" class="radcontrol">+</div>
+                </div>
+            </div>
+
+        </div>
+
+        <section id="photo">
+            <input type="file" name="imgLoader" id="imgLoader">
+            <canvas id="canvas"></canvas>
+        </section>
+
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
